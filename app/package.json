@@ -4,7 +4,7 @@
   "scripts": {
     "build": "esbuild src/index.js --bundle --outfile=dist/bundle.js",
     "build:css": "postcss styles/input.css -o dist/styles.css",
-    "dev": "concurrently \"npm:watch:*\"",
+    "dev": "live-server .",
     "watch:js": "esbuild src/index.js --bundle --outfile=dist/bundle.js --watch",
     "watch:css": "postcss styles/input.css -o dist/styles.css --watch"
   },
